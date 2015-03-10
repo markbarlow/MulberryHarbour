@@ -1,0 +1,421 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<title>Mulberry Harbour - mp3 blog - warm organic and modern electronic music</title>
+<meta name="description" content="Music, mp3s and blog from acoustic, electronica and soundtrack composer Mulberry Harbour">
+<meta name="keywords" content="music, acoustic, organic, mp3, audio, electronica, blog, modern folk, London, England, UK, news">
+<LINK HREF=http://www.mulberryharbourmusic.co.uk/main.css REL=STYLESHEET TYPE=text/css>
+<link rel="shortcut icon" href="{Favicon}" />
+<link rel="alternate" type="application/rss+xml" href="{RSS}" />
+
+<style type="text/css">
+<!--
+
+#leftcol1 {
+  background: #fff;
+  float: left;
+  width: 70%;
+  /* can add height in here too, necessary if nested divs are to be set as a percentage */
+}
+#rightcol1 {
+  background: #fff;
+  float: right;
+  width: 27%;
+  /* can add height in here too, necessary if nested divs are to be set as a percentage */
+}
+
+
+
+.title
+
+{
+
+	font-size: 11pt;
+	font-weight: bold;
+	color: #6A9BAC;
+
+	}
+
+
+
+          #container #rightcol1  .heading#following {
+            background: url(http://assets.tumblr.com/themes/redux/sidebar-following.png) right center no-repeat {color:Background};
+          }
+
+          #container #rightcol1  .content {
+            margin-top: 2px;
+            padding: 7px 10px;
+            background: #eaeaea;
+            color: #666;
+            font-size: 11px;
+            overflow: hidden;
+          }
+
+            #container #rightcol1  a {
+              text-decoration: none;
+            }
+
+            #container #rightcol1  #following-avatars.content {
+              padding: 4px;
+            }
+
+                #container #rightcol1  #following-avatars.content a img {
+                  margin: 5px;
+                }
+
+
+           #container #rightcol1 #buttons {
+              padding: 20px 0 0 0;
+            }
+
+              #container #rightcol1 #buttons .button {
+                width: 45%;
+                height: 21px;
+                float: left;
+                background: left center no-repeat transparent;
+                padding: 2px 0 0 30px;
+                font-size: 14px;
+              }
+
+                #container #rightcol1 #buttons a {
+                  color: {color:Background};
+                  text-decoration: none;
+                }
+
+                #container #rightcol1 #buttons div {
+                  padding-bottom: 15px;
+                }
+
+              #container #rightcol1 #buttons .button#button-rss {
+                background-image: url(http://assets.tumblr.com/themes/redux/button-rss.png?2);
+              }
+
+              #container #rightcol1 #buttons .button#button-random {
+                background-image: url(http://assets.tumblr.com/themes/redux/button-random.png?2);
+              }
+
+              #container #rightcol1 #buttons .button#button-archive {
+                background-image: url(http://assets.tumblr.com/themes/redux/button-archive.png?2);
+              }
+
+              #container #rightcol1 #buttons .button#button-mobile {
+                background-image: url(http://assets.tumblr.com/themes/redux/button-mobile.png?2);
+              }
+
+-->
+</style>
+
+</head>
+
+<body>
+
+<!-- header section -->
+<div id="container">
+<br>
+<div class="logo"><a href="http://www.mulberryharbourmusic.co.uk/mulberryharbour/"><img src="http://www.mulberryharbourmusic.co.uk/i/mulberryharbourlogo.jpg" vspace=0 border=0></a></div>
+<div class="nav"><div class="navtext">
+<!-- nav text here -->
+<a href="http://www.mulberryharbourmusic.co.uk/index.html">home</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.mulberryharbourmusic.co.uk/about.html">about</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.mulberryharbourmusic.co.uk/soundtrack-sounddesign-composition.html">soundtracks</a>&nbsp;&nbsp;&nbsp;
+<a href="http://mulberryharbour.bandcamp.com">downloads</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.mulberryharbourmusic.co.uk/contact.html">contact</a>
+</div></div>
+<br clear="all">
+<div style="height:10px;"><img src="http://www.mulberryharbourmusic.co.uk/i/spacer.gif"></div>
+</div>
+
+<div id="container">
+<div class="imagestrip" id="carwheel"></div>
+<div style="height:15px;"><img src="http://www.mulberryharbourmusic.co.uk/i/divider-dots.gif"></div>
+</div>
+<!-- end header section -->
+
+
+<!-- start main container  -->
+<div id="container">
+
+
+<!-- left column -->
+<div id="leftcol1">
+
+<!-- main box -->
+<div id="blurb1" class="lightgreybox">
+<h1>Blog</h1>
+<div class="padme">
+
+<!-- main content -->
+  {block:SearchPage}
+        <div id="searchresults" class="searchresultcount">{SearchResultCount} results for <strong>"{SearchQuery}"</strong></div>
+      {/block:SearchPage}
+
+      {block:NoSearchResults}
+        <style type="text/css">
+          .searchresultcount {
+            display: none;
+          }
+        </style>
+        <div id="searchresults">No results for <strong>"{SearchQuery}"</strong></div>
+      {/block:NoSearchResults}
+
+      {block:Posts}
+        <div class="post">
+
+          {block:Photo}
+            <div class="media">{LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}" />{LinkCloseTag}</div>
+            {block:Caption}<div class="copy">{Caption}</div><br>{/block:Caption}
+          {/block:Photo}
+
+          {block:Video}
+            <div class="media">{Video-500}</div>
+            {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
+          {/block:Video}
+
+          {block:Audio}
+            <div class="audio">
+              <div class="player">{AudioPlayerWhite}</div>
+              <div class="meta">{PlayCountWithLabel}{block:ExternalAudio} &bull; <a href="{ExternalAudioURL}">download</a>{/block:ExternalAudio}</div>
+              <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+            {block:Caption}<div class="copy">{Caption}</div>{/block:Caption}
+          {/block:Audio}
+
+          {block:Quote}
+            <div class="quote {Length}">{Quote}</div>
+            <div class="copy">
+              <div class="quotebg">“</div>
+              {block:Source}
+                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                  <tr>
+                    <td valign="top" style="width: 20px">&mdash;</td>
+                    <td valign="top" class="quote_source">
+                      {Source}
+                    </td>
+                  </tr>
+                </table>
+              {/block:Source}
+            </div>
+          {/block:Quote}
+
+          {block:Text}
+            {block:Title}<div class="title">{Title}</div>{/block:Title}
+            <div class="copy">{Body}</div>
+          {/block:Text}
+
+          {block:Chat}
+            {block:Title}<div class="title">{Title}</div>{/block:Title}
+            <div class="chat">
+              <div class="lines">
+                {block:Lines}
+                  <div class="line {Alt}">{block:Label}<strong>{Label}</strong>{/block:Label} {Line}</div>
+                {/block:Lines}
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div style="height: 20px"></div>
+          {/block:Chat}
+
+          {block:Link}
+            <div class="link"><a href="{URL}" {Target}>{Name} &raquo;</a></div>
+            {block:Description}<div class="copy">{Description}</div>{/block:Description}
+          {/block:Link}
+
+          <a href="{Permalink}">
+            <div class="footer">
+              <div class="date">
+                <br>
+                {block:Reblog}Reblogged{/block:Reblog}
+                {block:NotReblog}Posted{/block:NotReblog}
+
+                {TimeAgo}
+
+                {block:Reblog}from {ReblogParentName} {block:RebloggedFromReblog}(originally from {ReblogRootName}){block:RebloggedFromReblog}{/block:Reblog}
+                {block:FromBookmarklet}from bookmarklet{/block:FromBookmarklet}
+                {block:FromMobile}from mobile{/block:FromMobile}
+
+              </div>
+              {block:NoteCount}<div class="notes">{NoteCountWithLabel}</div>{/block:NoteCount}
+              <div class="clear"></div>
+            </div>
+			  <br><hr><br>
+          </a>
+
+          {block:HasTags}<div class="footer"><div class="tags">Tagged: {block:Tags}<a href="{TagURL}">{Tag}</a><span class="tag-commas">, </span>{/block:Tags}.</div></div>{/block:HasTags}
+
+          {block:PostNotes}<div class="notecontainer">{PostNotes}</div>{/block:PostNotes}
+        </div>
+        <div class="bottom"></div>
+      {/block:Posts}
+
+
+
+      {block:Pagination}
+        <div id="navigation">
+          {block:PreviousPage}<a href="{PreviousPage}">&larr; previous page</a>{/block:PreviousPage}
+          {block:NextPage}<a href="{NextPage}">next page &rarr;</a>{/block:NextPage}
+        </div>
+      {/block:Pagination}
+
+<!-- end main content -->
+
+<br><br>
+
+</div>
+</div>
+<!-- end main box -->
+
+</div>
+<!-- end left column -->
+
+
+<!-- right column -->
+<div id="rightcol1">
+
+
+<div id="blogfeed" class="lightgreybox">
+<h1>About this blog</h1>
+<div class="padme" align="left">
+
+I'm an electronic musician and soundtrack composer based in London, UK, with acoustic, modern classical and Hispanic influences. I'll be posting mp3s and streams of new and old tracks on this blog from time to time, with a bit of commentary.
+<br><br>
+The name Mulberry Harbour comes from the invention used in the Normandy landings, and to me - taken in a more optimistic light beyond its history - represents the freedom of sailing anywhere, the excitement of exploration, and the unknown possibilities of creating links between different cultures. Musically speaking, it all started out as a side project after getting scurvy from the restricted diet of playing in bands, with the idea that the harbour may be set up in electronica one day, folk another, and minimalism the next.
+
+<br><br>
+
+        <a href="http://www.tumblr.com/follow/{Name}"><div class="heading" id="followontumblr-x">Follow on Tumblr</div></a>
+        <br>
+
+     {block:Following}
+          <div class="heading" id="following">Following</div>
+          <div class="content" id="following-avatars">
+            {block:Followed}<a href="{FollowedURL}"><img src="{FollowedPortraitURL-40}" /></a>{/block:Followed}
+          </div>
+        {/block:Following}
+
+
+</div></div>
+
+<br clear="all">
+
+
+
+<div id="blogfeed" class="lightgreybox">
+<h1>Search</h1>
+<div class="padme" align="left">
+
+
+<!-- tumblr right rail stuff here -->
+
+<div id="description">{Description}</div>
+
+        <div id="search">
+          <form action="/search" method="get" id="search-form">
+            <input type="hidden" name="t" value="{Name}" />
+            <input type="hidden" name="scope" value="all_of_tumblr" />
+            <input type="text" name="q" class="query" value="{SearchQuery}" />
+            <input type="submit" value="Search" class="submit" />
+            <div class="clear"></div>
+          </form>
+        </div>
+        <div id="search-scope">
+          <input type="radio" id="search-scope-me" name="scope" checked onclick="document.getElementById('search-form').action='/search'" /> <label for="search-scope-me" onclick="document.getElementById('search-form').action='/search'">My Blog</label>
+          <input type="radio" id="search-scope-all" name="scope" onclick="document.getElementById('search-form').action='http://tumblr.com/search'" /> <label for="search-scope-all" onclick="document.getElementById('search-form').action='http://tumblr.com/search'">All of Tumblr</label>
+        </div>
+
+
+
+<div id="buttons">
+
+            <div class="button" id="button-rss"><a href="{RSS}">RSS Feed</a></div>
+            <div class="button" id="button-random"><a href="/random">Random</a></div>
+             <div class="button" id="button-archive"><a href="/archive">Archive</a></div>
+            <div class="button" id="button-mobile"><a href="/mobile">Mobile</a></div>
+
+         <div><a href="http://www.tumblr.com">Powered by Tumblr</a></div>
+</div>
+<br clear="all">
+
+
+
+</div></div>
+
+<br clear="all">
+
+
+<div id="blogfeed" class="lightgreybox">
+<h1>Music streams</h1>
+<div class="padme" align="center">
+
+
+
+
+<!-- water boatman tall -->
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150" height="295"><param name="movie" value="http://bandcamp.com/EmbeddedPlayer.swf/album=2650403783/size=tall/bgcol=FFFFFF/linkcol=4285BB/"><param name="quality" value="high"><param name="allowScriptAccess" value="never"><param name="allowNetworking" value="always"><param name="bgcolor" value="#FFFFFF"><embed src="http://bandcamp.com/EmbeddedPlayer.swf/album=2650403783/size=tall/bgcol=FFFFFF/linkcol=4285BB/" width="150" height="295" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality=high allowScriptAccess=never allowNetworking=always bgcolor=#FFFFFF ></embed><noembed><a href="http://mulberryharbour.bandcamp.com/album/the-water-boatman">The Whetstone by Mulberry Harbour</a></noembed></object>
+<!-- end water boatman tall -->
+
+
+
+<!-- MH tall
+<hr>
+<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150" height="295" ><param name="movie" value="http://bandcamp.com/EmbeddedPlayer.swf/album=4002824650/size=tall/bgcol=FFFFFF/linkcol=4285BB/"><param name="quality" value="high"><param name="allowScriptAccess" value="never"><param name="allowNetworking" value="always"><param name="bgcolor" value="#FFFFFF"><embed src="http://bandcamp.com/EmbeddedPlayer.swf/album=4002824650/size=tall/bgcol=FFFFFF/linkcol=4285BB/" width="150" height="295" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" quality=high allowScriptAccess=never allowNetworking=always bgcolor=#FFFFFF ></embed><noembed><a href="http://mulberryharbour.bandcamp.com/album/mulberry-harbour">Benito by Mulberry Harbour</a></noembed></object>
+ end MH tall -->
+
+
+</div></div>
+
+<br clear="all">
+
+<div id="blogfeed" class="lightgreybox">
+<h1>Twitter feed</h1>
+<div class="padme" align="left">
+
+
+<!--  twitter -->
+<style>
+#twitter_update_list li {margin-bottom:15px;font-size:100%;}
+ul#twitter_update_list {list-style-type:none; padding-left:0px;margin-left:0px}
+/*  ul#twitter_update_list a {border-bottom:1px solid #eeeeee;padding-bottom:5px;display:block;} */
+ul#twitter_update_list {font-size:8pt;}
+.xsmall {font-size:8pt;}
+</style>
+<div id="twitter_div">
+<span class=xsmall><ul id="twitter_update_list"></ul></span>
+</div>
+<!-- end twitter -->
+
+
+</div></div>
+
+
+
+
+</div>
+<!-- end right column -->
+
+
+
+</div>
+<!-- end main container  -->
+
+
+<!-- footer -->
+<br clear="all"/><br>
+<div style="height:15px;"><img src="http://www.mulberryharbourmusic.co.uk/i/divider-dots.gif"></div>
+<div id="footer">
+Also on: <a href="http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewArtist?id=308454222" target=_new>iTunes</a> | <a href="http://www.last.fm/music/Mulberry+Harbour" target=_new>last.fm</a> | <a href="http://www.myspace.com/mulberryharbour" target=_new>Myspace</a> | <a href="http://www.imeem.com/people/-m4nHtI" target=_new>imeem</a> | <a href="http://indiestore.7digital.com/mulberryharbour" target=_new>Indiestore</a>
+<br>
+&copy; Mulberry Harbour, 2015
+<br><br>
+</div>
+<!-- end footer -->
+
+<!-- twitter js at very bottom to safeguard page load -->
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/mulberryharbour.json?callback=twitterCallback2&amp;count=3"></script>
+<!-- end twitter js -->
+
+
+</body>
+</html>

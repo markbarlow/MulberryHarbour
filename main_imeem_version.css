@@ -1,0 +1,292 @@
+BODY,TD,P,BR,LI,OL,UL,SUP,SELECT,TEXTAREA,DD,DT,SPAN,DL,h1			{font-family: Arial,Helvetica,Verdana,sans-serif,Tahoma; font-size:10pt;  line-height:12pt;}	
+
+
+
+h2 {
+	font-size: 11pt;
+	}
+
+h2 {
+	font-size: 10pt;
+	}
+
+ul {
+	list-style-type: disc;
+	}
+
+body {
+	background-color: #ffffff;
+	text-align:center;
+    margin:0;
+    padding:0;
+	}
+
+#container {
+	width:950px; 
+    margin: 0 auto;
+    text-align:left;
+		 }
+
+
+.logo {
+	height: 41px;
+    float: left;
+    width: 222px;
+		}
+
+.nav {
+	height: 41px;
+    float: right;
+    width: 500px;
+	position:relative;
+		}
+
+div.nav div.navtext {
+	position: absolute;
+	bottom: 0px;
+	text-align: right;
+    width: 500px;
+
+}
+
+div.navtext a {
+	color: #6A9BAC;
+	font-weight: bold;	
+}	
+	 
+	 
+
+/* image is 150, extra height added to div to pad below */
+
+.imagestrip {
+	height: 165px;
+	background-repeat: no-repeat;
+	background-position: center top;
+		}
+
+
+/* image ids for the imagestrip */
+
+#busstop1 {background-image: url(i/busstop1.jpg);}
+#busstop2 {background-image: url(i/busstop2.jpg);}
+#chair {background-image: url(i/chair950.jpg);}
+#carslogan {background-image: url(i/carslogan950.jpg);}
+#carwheel {background-image: url(i/carwheel950.jpg);}
+#mural {background-image: url(i/mural950.jpg);}
+
+
+
+/* dotted version */
+
+.dotdivider {
+
+	height: 23px;
+	background-repeat: repeat;
+	background-position: left top;
+	background-image: url(i/bluedivider.jpg);
+
+		}
+
+
+/* thick blue-green version; no padding added to this div cos of repeat */
+
+.bigdivider {
+
+	height: 23px;
+	background-repeat: repeat;
+	background-position: left top;
+	background-image: url(i/bluedivider.jpg);
+
+		}
+
+
+
+.padme {padding:10px;}
+
+.padme5 {padding:5px;}
+
+		
+
+.bluebox {
+border: 1px solid #5B9FB6;
+BACKGROUND:#ffffff;
+}
+
+.bluebox h1 {background:#B8D7ED;margin:0px;padding:3px;text-align:center;}
+
+.lightbluebox {
+border: 1px solid #B8D7ED;
+BACKGROUND:#ffffff;
+}
+
+.lightbluebox h1 {background:#B8D7ED;margin:0px;padding:2px;text-align:center;}
+
+
+.lightgreybox {
+border: 1px solid #cccccc;
+BACKGROUND:#ffffff;
+}
+
+.lightgreybox h1 {background:#eeeeee;margin:0px;padding:2px;text-align:center;}
+
+
+
+
+
+#footer {
+	width:100%; 
+    margin: 0 auto;
+    clear: all;
+		 }
+
+
+
+	
+/* smaller text for feedburner 	
+
+.feedburnerFeedBlock div {
+font-size:8pt;
+}
+
+ */
+
+/* remove feedburner bullets */	
+
+
+
+div.feedburnerFeedBlock ul {
+margin-left:0;
+padding-left:0;
+list-style-type: none;
+}
+
+	 
+
+/* remove feedburner image border */		
+
+div.feedburnerFeedBlock img {
+border:0;
+}
+
+
+
+/* control feedburner image position */	
+
+p.enclosed-assets 
+
+{
+
+
+
+}
+
+
+
+/*  feedburner titles in bold */	
+
+div.feedburnerFeedBlock ul li span.headline {
+font-weight:bold;
+}
+
+		 
+
+
+
+ /* untouched b&q stuff below here */	 
+
+	
+
+.large			{font-size: 9pt;}
+
+.xlarge			{font-size: 10pt;}
+
+.small			{font-size: 7pt;}
+
+.smallgrey		{font-size: 7pt; color:#ACB5B4;}
+
+.smallgreen		{font-size: 7pt; color:#6F8E8C;}
+
+.xsmall			{font-size: 7pt; font-weight:normal;}
+
+.white		{color:#FFFFFF;}
+
+.bodygreen		{color:#6F8E8C;}
+
+.bodygrey			{color:#ACB5B4;}
+
+.bodyred		{color:#CD0404;}
+
+.bodyblue		{color:#0C84B9;}
+
+
+
+A				{color:#0C84B9;}	
+
+A:Active 		{color:#ff6633;}
+
+A:Hover			{color:#ff6633;}
+
+A.plain			{color:#000000; text-decoration : none;}
+
+A.xml			{text-decoration : none;}
+
+
+
+
+
+
+
+.phototable {
+
+border: 1px solid #ACB5B4;
+
+}
+
+
+
+
+
+.bluetable {
+
+border: 1px solid #ACB5B4;
+
+BACKGROUND:#D3DCDB;
+
+}
+
+
+
+.greentable {
+
+border: 1px solid #ACB5B4;
+
+BACKGROUND:#b7d3b6;
+
+}
+
+
+
+.greytable {
+
+border: 1px solid #ACB5B4;
+
+BACKGROUND:#bcc5c0;
+
+}
+
+
+
+.olivetable {
+
+border: 1px solid #ACB5B4;
+
+BACKGROUND:#cccc99;
+
+}
+
+
+
+
+
+
+
