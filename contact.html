@@ -69,22 +69,23 @@ function validate(frm)
 <div class="padme">
 
 
-Please send enquiries to info at mulberryharbourmusic dot co dot uk
+<!-- Please send enquiries to info at.... -->
 
-<!-- old form
+
 Fill in the form to send a message, or to request a sample / download pack <br><br>
 
 
-<FORM METHOD="POST"
- ACTION="http://www.brodyandquint.com/cgi-bin/cgiemail/mulberryharbour/cgiemail.txt" NAME="ContactForm" onSubmit="return validate(ContactForm)">
+<form action="https://getsimpleform.com/messages?form_api_token=cca526327e47a3de181e6fdc93bf5b80" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <input type='hidden' name='redirect_to' value='http://mulberryharbourmusic.co.uk/contact-thanks.html' />
 
-<div style="float:left;">Your e-mail address:</div>
+<div style="float:left;">Your email address:</div>
 
 <div style="float:right;width:70%;"><INPUT type="text" NAME="email"><p></div><br clear="all">
 
 <div style="float:left;align:bottom;">Your name:</div>
 
-<div style="float:right;width:70%;align:bottom;"><INPUT type="text"  NAME="yourname"><p></div><br clear="all">
+<div style="float:right;width:70%;align:bottom;"><INPUT type="text"  NAME="name"><p></div><br clear="all">
 
 <div style="float:left;align:bottom;">Message subject:</div>
 
@@ -94,15 +95,11 @@ Fill in the form to send a message, or to request a sample / download pack <br><
 
 <div style="float:right;width:70%;align:bottom;"><textarea cols="50" rows="9" NAME="comment"></textarea><p>
 
-<INPUT TYPE="submit" value="Send e-mail">
-<INPUT TYPE="hidden" NAME="success" VALUE="http://www.brodyandquint.com/mulberryharbour/contact-thanks.html">
+<INPUT TYPE="submit" value="Submit">
 <input type=hidden name="required" value="email">
 
 </FORM>
 </div>
-
--->
-
 
 <br clear="all"><br>
 </div>
