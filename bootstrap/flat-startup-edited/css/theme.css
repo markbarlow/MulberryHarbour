@@ -420,6 +420,7 @@ body .fus-btns .btn {
 
 .fus-pricing {
   color: white;
+  background: url("../images/bigpic_trees2.jpg") center center no-repeat;
 }
 
 .fus-pricing .fus-overlay {
@@ -790,7 +791,7 @@ body.fus-black .navbar.fus-navbar-solid {
     position: absolute;
   }
   body #pricing {
-    background: url("../images/jumbotron.jpg") center center no-repeat;
+    background: url("../images/bigpic_trees2.jpg") center center no-repeat;
     background-size: cover;
   }
   body footer {
