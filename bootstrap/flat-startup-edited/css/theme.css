@@ -418,9 +418,26 @@ body .fus-btns .btn {
   text-align: center;
 }
 
-.fus-pricing {
+
+.fus-albums {
   color: white;
   background: url("../images/bigpic_trees2.jpg") center center no-repeat;
+}
+
+
+.fus-influences {
+  color: white;
+  background: url("../images/bigpic_seahorizon7.jpg") center center no-repeat;
+}
+
+.fus-footer {
+  color: white;
+  background: url("../images/bigpic_beachboat.jpg") center center no-repeat;
+}
+
+
+.fus-pricing {
+  color: white;
 }
 
 .fus-pricing .fus-overlay {
@@ -791,7 +808,7 @@ body.fus-black .navbar.fus-navbar-solid {
     position: absolute;
   }
   body #pricing {
-    background: url("../images/bigpic_trees1.jpg") center center no-repeat;
+    background: url("../images/bigpic_trees2.jpg") center center no-repeat;
     background-size: cover;
   }
   
