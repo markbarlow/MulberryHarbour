@@ -2,6 +2,7 @@
 #contact-area {
 	width: 600px;
 	margin-top: 25px;
+	margin: auto;
 }
 
 #contact-area input, #contact-area textarea {
@@ -9,7 +10,7 @@
 	width: 471px;
         /* font-size: 1.4em; */
 	margin: 0px 0px 10px 0px;
-	border: 2px solid #ccc;
+	border: 1px solid #ccc;
 }
 
 #contact-area textarea {
@@ -17,7 +18,7 @@
 }
 
 #contact-area textarea:focus, #contact-area input:focus {
-	border: 2px solid #900;
+	border: 1px solid #3A92D7;
 }
 
 #contact-area input.submit-button {
@@ -31,5 +32,6 @@ label {
 	margin-right: 15px;
 	width: 100px;
 	padding-top: 5px;
+	font-weight: normal;
 	/* font-size: 1.4em; */
 }
