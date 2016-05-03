@@ -24,7 +24,21 @@
 #contact-area input.submit-button {
 	width: 100px;
 	float: right;
+	clear: right;
 }
+
+
+#contact-area div.g-recaptcha {
+	float: right;
+	clear: left;
+	padding: 0px;
+	width: 27%;
+	margin: 0px 30% 10px 0px;
+
+}
+
+
+
 
 label {
 	float: left;
